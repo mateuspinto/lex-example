@@ -9,7 +9,7 @@ run:
 	./a.out
 
 run1:
-	./a.out < entrada_padrao.txt
+	./a.out < input/entrada_personalizada1.txt
 
 run2:
-	./a.out
+	./a.out < input/entrada_personalizada2.txt
