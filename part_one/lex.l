@@ -11,7 +11,7 @@ lowercase_letter [a-z]
 positive_integer [+]?{digit}+
 negative_integer [-]{digit}+
 
-float_point {digit}+[.]{digit}+
+float_point [+-]?{digit}+[.]{digit}+
 license_plate {uppercase_letter}{uppercase_letter}{uppercase_letter}[-]{digit}{digit}{digit}{digit}
 word ({uppercase_letter}|{lowercase_letter})+
 cell_phone_number {digit}{digit}{digit}{digit}[-]{digit}{digit}{digit}{digit}
