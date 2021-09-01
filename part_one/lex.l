@@ -4,15 +4,17 @@
 %option noyywrap
 
 delimiters [ \t\n]+
+
 digit [0-9]
 uppercase_letter [A-Z]
 lowercase_letter [a-z]
-positive_integer {digit}+|\+{digit}+
-negative_integer \-{digit}+
-float_point {digit}+\.{digit}+
-license_plate {uppercase_letter}{uppercase_letter}{uppercase_letter}\-{digit}{digit}{digit}{digit}
+positive_integer [+]?{digit}+
+negative_integer [-]{digit}+
+
+float_point {digit}+[.]{digit}+
+license_plate {uppercase_letter}{uppercase_letter}{uppercase_letter}[-]{digit}{digit}{digit}{digit}
 word ({uppercase_letter}|{lowercase_letter})+
-cell_phone_number {digit}{digit}{digit}{digit}\-{digit}{digit}{digit}{digit}
+cell_phone_number {digit}{digit}{digit}{digit}[-]{digit}{digit}{digit}{digit}
 person_name {word}[ ]{word}[ ]{word}|{word}[ ]{word}[ ]{word}[ ]{word}
 
 %%

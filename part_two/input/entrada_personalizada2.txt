@@ -6,7 +6,13 @@ add t2, s0, s1;
 
 ;
 
-sub s0, s0, 5000
+subi s0, s0, 5000
 ;;;
 
 add t1, t1, t2;
+
+mateus:
+
+fadd f20, f15, f9;
+fsub f1, f1, f2;
+j mateus;

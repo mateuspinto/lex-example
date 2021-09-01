@@ -1,5 +1,7 @@
+loop:
 add t2, s0, s1;
-sub t4, zero, 50;
 and s1, t5, t6;
 or fp, sp, ra;
-nand t3, t1, 50;
+addi t2, t2, 50;
+fadd f2, f3, f15;
+j loop;
