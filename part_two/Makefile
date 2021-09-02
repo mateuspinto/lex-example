@@ -1,15 +1,14 @@
-#	Trabalho pratico 1 de Compiladores - CCF 355
-#	Feito por Mateus Pinto da Silva, matricula 3489
-#	Universidade Federal de Viçosa
-
 all:
 	flex lex.l && gcc lex.yy.c
 
 run:
 	./a.out
 
-run1:
+run0:
 	./a.out < input/entrada_personalizada1.txt
 
-run2:
+run1:
 	./a.out < input/entrada_personalizada2.txt
+
+run2:
+	./a.out < input/entrada_personalizada3.txt

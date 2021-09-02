@@ -20,11 +20,12 @@ person_name {word}[ ]{word}[ ]{word}|{word}[ ]{word}[ ]{word}[ ]{word}
 %%
 {delimiters} {}
 {cell_phone_number} {printf("Foi encontrado um telefone. LEXEMA: %s\n", yytext);}
-{positive_integer}	{printf("Foi encontrado um numero inteiro positivo. LEXEMA: %s\n", yytext);}
-{negative_integer}	{printf("Foi encontrado um numero inteiro negativo. LEXEMA: %s\n", yytext);}
 {float_point} {printf("Foi encontrado um numero com parte decimal. LEXEMA: %s\n", yytext);}
 {license_plate} {printf("Foi encontrado uma placa. LEXEMA: %s\n", yytext);}
 {person_name} {printf("Foi encontrado um nome proprio. LEXEMA: %s\n", yytext);}
+
+{positive_integer}	{printf("Foi encontrado um numero inteiro positivo. LEXEMA: %s\n", yytext);}
+{negative_integer}	{printf("Foi encontrado um numero inteiro negativo. LEXEMA: %s\n", yytext);}
 {word} {printf("Foi encontrado uma palavra. LEXEMA: %s\n", yytext);}
 %%
 

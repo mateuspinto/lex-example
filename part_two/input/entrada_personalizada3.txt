@@ -1,0 +1,4 @@
+add t2, t2, 50;
+and f2, f3, f15;
+addi t2, s0, s1;
+fadd s1, t5, t6;

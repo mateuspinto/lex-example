@@ -1,7 +1,3 @@
-#	Trabalho pratico 1 de Compiladores - CCF 355
-#	Feito por Mateus Pinto da Silva, matricula 3489
-#	Universidade Federal de Viçosa
-
 all:
 	flex lex.l && gcc lex.yy.c
 
